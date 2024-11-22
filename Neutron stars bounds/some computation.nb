@@ -1,0 +1,364 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15750,        356]
+NotebookOptionsPosition[     14954,        335]
+NotebookOutlinePosition[     15389,        352]
+CellTagsIndexPosition[     15346,        349]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"eqns", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"p1", " ", 
+        RowBox[{"Cos", "[", "\[Theta]", "]"}]}], " ", "+", " ", 
+       RowBox[{"p2", " ", 
+        RowBox[{"Cos", "[", "\[Alpha]", "]"}]}]}], " ", "==", " ", 
+      RowBox[{
+       RowBox[{"p3", " ", 
+        RowBox[{"Cos", "[", "\[Alpha]d", "]"}]}], "+", " ", 
+       RowBox[{"p4", " ", 
+        RowBox[{"Cos", "[", "\[Theta]d", "]"}]}]}]}], " ", ",", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"p1", " ", 
+        RowBox[{"Sin", "[", "\[Theta]", "]"}]}], " ", "-", " ", 
+       RowBox[{"p2", " ", 
+        RowBox[{"Sin", "[", "\[Alpha]", "]"}]}]}], " ", "==", " ", 
+      RowBox[{
+       RowBox[{"p3", " ", 
+        RowBox[{"Sin", "[", "\[Alpha]d", "]"}]}], "-", 
+       RowBox[{"p4", " ", 
+        RowBox[{"Sin", "[", "\[Theta]d", "]"}]}]}]}], " ", ",", " ", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["p1", 
+        RowBox[{"2", " "}]], "+", " ", 
+       SuperscriptBox["p2", "2"]}], " ", "==", " ", 
+      RowBox[{
+       SuperscriptBox["p3", 
+        RowBox[{"2", " "}]], "+", " ", 
+       SuperscriptBox["p4", "2"]}]}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.9287569637367306`*^9, 3.928757105630222*^9}, {
+  3.92875717172608*^9, 3.9287572303955317`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"2300936e-b4e5-46f4-964d-b54d0da965f4"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"vars", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+    "p3", ",", " ", "p4", ",", " ", "\[Theta]d", ",", " ", "\[Alpha]d"}], 
+    "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.928757254697873*^9, 3.928757319381874*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"ce38bc67-34da-4241-bd90-98bf581d0810"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solution", " ", "=", " ", 
+  RowBox[{"Solve", "[", 
+   RowBox[{"eqns", ",", " ", "vars"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9287572753731365`*^9, 3.9287572931096396`*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"a84fbdfb-5625-4884-b796-e53b0817c610"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve", "svars", 
+   "\"Equations may not give solutions for all \\\"solve\\\" variables.\"", 2,
+    8, 1, 32600936193994332794, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.9287573435676136`*^9},
+ CellLabel->
+  "During evaluation of \
+In[8]:=",ExpressionUUID->"959d42ea-d3ab-4bf5-9aac-8e1196fa5907"],
+
+Cell[BoxData[
+ TemplateBox[<|"shortenedBoxes" -> TagBox[
+     RowBox[{"{", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{
+             RowBox[{"p3", "\[Rule]", 
+               RowBox[{"-", 
+                 SqrtBox[
+                  RowBox[{
+                    SuperscriptBox["p1", "2"], "+", 
+                    SuperscriptBox["p2", "2"], "-", 
+                    SuperscriptBox["p4", "2"]}]]}]}], ",", 
+             RowBox[{"\[Theta]d", "\[Rule]", 
+               TemplateBox[{"1"}, "OutputSizeLimit`Skeleton"]}], ",", 
+             RowBox[{"\[Alpha]d", "\[Rule]", 
+               FrameBox[
+                RowBox[{
+                  RowBox[{
+                    RowBox[{"ArcTan", "[", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "4"}], " ", 
+                    SuperscriptBox["p1", "2"], " ", "p2", " ", 
+                    SqrtBox[
+                    RowBox[{
+                    SuperscriptBox["p1", "2"], "+", 
+                    SuperscriptBox["p2", "2"], "-", 
+                    SuperscriptBox["p4", "2"]}]], " ", 
+                    RowBox[{"Cos", "[", "\[Alpha]", "]"}]}], "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p2", "3"], " ", 
+                    SqrtBox[
+                    TemplateBox[{"1"}, "OutputSizeLimit`Skeleton"]], " ", 
+                    RowBox[{"Cos", "[", "\[Alpha]", "]"}]}], "+", 
+                    TemplateBox[{"24"}, "OutputSizeLimit`Skeleton"], "+", 
+                    SqrtBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p1", "2"], " ", "p2", " ", 
+                    SqrtBox[
+                    RowBox[{
+                    SuperscriptBox["p1", "2"], "+", 
+                    SuperscriptBox["p2", "2"], "-", 
+                    SuperscriptBox["p4", "2"]}]], " ", 
+                    RowBox[{"Cos", "[", "\[Alpha]", "]"}]}], "+", 
+                    TemplateBox[{"17"}, "OutputSizeLimit`Skeleton"], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p1", "2"], " ", "p2", " ", 
+                    SqrtBox[
+                    RowBox[{
+                    SuperscriptBox["p1", "2"], "+", 
+                    SuperscriptBox["p2", "2"], "-", 
+                    SuperscriptBox["p4", "2"]}]], " ", 
+                    RowBox[{"Cos", "[", "\[Alpha]", "]"}], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Sin", "[", "\[Theta]", "]"}], "2"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p1", "3"], " ", 
+                    SqrtBox[
+                    RowBox[{
+                    SuperscriptBox["p1", "2"], "+", 
+                    SuperscriptBox["p2", "2"], "-", 
+                    SuperscriptBox["p4", "2"]}]], " ", 
+                    RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Sin", "[", "\[Theta]", "]"}], "2"]}]}], ")"}], 
+                    "2"], "-", 
+                    RowBox[{"4", " ", 
+                    RowBox[{"(", 
+                    TemplateBox[{"1"}, "OutputSizeLimit`Skeleton"], ")"}], 
+                    " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    SuperscriptBox["p1", "4"], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["p1", "2"], " ", 
+                    SuperscriptBox["p2", "2"]}], "+", 
+                    SuperscriptBox["p2", "4"], "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p1", "2"], " ", 
+                    SuperscriptBox["p4", "2"]}], "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p2", "2"], " ", 
+                    SuperscriptBox["p4", "2"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p4", "4"]}], "+", 
+                    TemplateBox[{"40"}, "OutputSizeLimit`Skeleton"], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p1", "3"], " ", "p2", " ", 
+                    RowBox[{"Cos", "[", "\[Alpha]", "]"}], " ", 
+                    RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Sin", "[", "\[Theta]", "]"}], "2"]}], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["p1", "4"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Cos", "[", "\[Theta]", "]"}], "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Sin", "[", "\[Theta]", "]"}], "2"]}], "+", 
+                    RowBox[{"6", " ", 
+                    SuperscriptBox["p1", "2"], " ", 
+                    SuperscriptBox["p2", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Sin", "[", "\[Alpha]", "]"}], "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Sin", "[", "\[Theta]", "]"}], "2"]}], "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p1", "3"], " ", "p2", " ", 
+                    RowBox[{"Sin", "[", "\[Alpha]", "]"}], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Sin", "[", "\[Theta]", "]"}], "3"]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["p1", "4"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Sin", "[", "\[Theta]", "]"}], "4"]}]}], 
+                    ")"}]}]}]]}], 
+                    RowBox[{"2", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p1", "2"], " ", 
+                    SuperscriptBox["p2", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Cos", "[", "\[Alpha]", "]"}], "2"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p2", "4"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Cos", "[", "\[Alpha]", "]"}], "2"]}], "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p2", "2"], " ", 
+                    SuperscriptBox["p4", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Cos", "[", "\[Alpha]", "]"}], "2"]}], "+", 
+                    RowBox[{"8", " ", 
+                    SuperscriptBox["p1", "3"], " ", "p2", " ", 
+                    RowBox[{"Cos", "[", "\[Alpha]", "]"}], " ", 
+                    RowBox[{"Cos", "[", "\[Theta]", "]"}]}], "+", 
+                    RowBox[{"8", " ", "p1", " ", 
+                    SuperscriptBox["p2", "3"], " ", 
+                    RowBox[{"Cos", "[", "\[Alpha]", "]"}], " ", 
+                    RowBox[{"Cos", "[", "\[Theta]", "]"}]}], "-", 
+                    RowBox[{"8", " ", "p1", " ", "p2", " ", 
+                    SuperscriptBox["p4", "2"], " ", 
+                    RowBox[{"Cos", "[", "\[Alpha]", "]"}], " ", 
+                    RowBox[{"Cos", "[", "\[Theta]", "]"}]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p1", "4"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Cos", "[", "\[Theta]", "]"}], "2"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p1", "2"], " ", 
+                    SuperscriptBox["p2", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Cos", "[", "\[Theta]", "]"}], "2"]}], "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p1", "2"], " ", 
+                    SuperscriptBox["p4", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Cos", "[", "\[Theta]", "]"}], "2"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p1", "2"], " ", 
+                    TemplateBox[{"1"}, "OutputSizeLimit`Skeleton"], " ", 
+                    SuperscriptBox[
+                    TemplateBox[{"1"}, "OutputSizeLimit`Skeleton"], "2"]}], 
+                    "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p2", "4"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Sin", "[", "\[Alpha]", "]"}], "2"]}], "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p2", "2"], " ", 
+                    SuperscriptBox["p4", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Sin", "[", "\[Alpha]", "]"}], "2"]}], "-", 
+                    RowBox[{"8", " ", 
+                    SuperscriptBox["p1", "3"], " ", "p2", " ", 
+                    RowBox[{"Sin", "[", "\[Alpha]", "]"}], " ", 
+                    RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "-", 
+                    RowBox[{"8", " ", "p1", " ", 
+                    SuperscriptBox["p2", "3"], " ", 
+                    RowBox[{"Sin", "[", "\[Alpha]", "]"}], " ", 
+                    RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "+", 
+                    RowBox[{"8", " ", "p1", " ", "p2", " ", 
+                    SuperscriptBox["p4", "2"], " ", 
+                    RowBox[{"Sin", "[", "\[Alpha]", "]"}], " ", 
+                    RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p1", "4"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Sin", "[", "\[Theta]", "]"}], "2"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p1", "2"], " ", 
+                    SuperscriptBox["p2", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Sin", "[", "\[Theta]", "]"}], "2"]}], "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["p1", "2"], " ", 
+                    SuperscriptBox["p4", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Sin", "[", "\[Theta]", "]"}], "2"]}]}], ")"}]}]],
+                     ",", 
+                    FractionBox[
+                    TemplateBox[{"1"}, "OutputSizeLimit`Skeleton"], 
+                    TemplateBox[{"1"}, "OutputSizeLimit`Skeleton"]]}], "]"}], 
+                    "+", 
+                    RowBox[{"2", " ", "\[Pi]", " ", 
+                    TemplateBox[{"1"}, "C"]}]}], 
+                  StyleBox[
+                  "\" if \"", ShowStringCharacters -> False, FontFamily -> 
+                   "Roboto-Medium", FontOpacity -> 0.44], 
+                  RowBox[{
+                    TemplateBox[{"1"}, "C"], "\[Element]", 
+                    TemplateBox[{}, "Integers"]}]}], FrameStyle -> Directive[
+                  Opacity[0.2], 
+                  AbsoluteThickness[0.5]], RoundingRadius -> 4, 
+                BaselinePosition -> Baseline]}]}], "}"}], ",", 
+         TemplateBox[{"2"}, "OutputSizeLimit`Skeleton"], ",", 
+         RowBox[{"{", 
+           RowBox[{
+             RowBox[{"p3", "\[Rule]", 
+               SqrtBox[
+                RowBox[{
+                  SuperscriptBox["p1", "2"], "+", 
+                  SuperscriptBox["p2", "2"], "-", 
+                  SuperscriptBox["p4", "2"]}]]}], ",", 
+             RowBox[{"\[Theta]d", "\[Rule]", 
+               TemplateBox[{"1"}, "OutputSizeLimit`Skeleton"]}], ",", 
+             RowBox[{"\[Alpha]d", "\[Rule]", 
+               TemplateBox[{"1"}, "OutputSizeLimit`Skeleton"]}]}], "}"}]}], 
+       "}"}], Short[#, 8]& ], "line" -> 8, "sessionID" -> 
+   32600936193994332794, "byteCount" -> 30964104, "size" -> 8, "stored" -> 
+   False, "expr" -> Missing["NotStored"], "wrap" -> OutputSizeLimit`Defer, 
+   "version" -> 1|>,
+  "OutputSizeLimitTemplate"]], "Output",
+ CellChangeTimes->{{3.9287572966533327`*^9, 3.928757297961765*^9}, 
+   3.9287573455128603`*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"f9c3de59-15a1-44b3-a513-7d0620655e44"]
+}, Open  ]]
+},
+WindowSize->{1152, 579.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (June 3, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"fb9e5df5-a111-4a58-b157-4f4510b1a10c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1411, 38, 31, "Input",ExpressionUUID->"2300936e-b4e5-46f4-964d-b54d0da965f4"],
+Cell[1972, 60, 336, 8, 28, "Input",ExpressionUUID->"ce38bc67-34da-4241-bd90-98bf581d0810"],
+Cell[CellGroupData[{
+Cell[2333, 72, 281, 5, 28, "Input",ExpressionUUID->"a84fbdfb-5625-4884-b796-e53b0817c610"],
+Cell[2617, 79, 359, 9, 28, "Message",ExpressionUUID->"959d42ea-d3ab-4bf5-9aac-8e1196fa5907"],
+Cell[2979, 90, 11959, 242, 265, "Output",ExpressionUUID->"f9c3de59-15a1-44b3-a513-7d0620655e44"]
+}, Open  ]]
+}
+]
+*)
+
